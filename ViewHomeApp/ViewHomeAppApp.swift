@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-@main
-struct ViewHomeAppApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+@main // punto  de entrada de la aplicación
+struct ViewHomeAppApp: App { // protocolo que toda aplicación debe conformar
+    var body: some Scene { // escena de la interfaz de nuestra app
+        WindowGroup { // ventana principal de nuestra app
+            LoginView()
         }
     }
 }

@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct HomeView: View {
+    var email: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(spacing: 20, content: {
+            
+            Text("Bienvenido")
+            
+            Text(email)
+            
+            Image(systemName: "house.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .foregroundColor(.blue)
+            
+            Spacer()
+            
+        }).padding()
+        
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(email: "yrving@yopmail.com")
 }
